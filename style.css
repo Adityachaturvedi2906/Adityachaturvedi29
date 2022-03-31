@@ -1,0 +1,96 @@
+
+.header {
+	overflow: hidden;
+	float:none; 
+ 	vertical-align: top;
+	
+  }
+  
+  /* Style the header links */
+  .header a {
+	float: left;
+	color: rgb(250, 146, 146);
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 25px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+	color: rgb(75, 27, 27);
+	transition: ease-in-out 0.5s;
+	text-decoration: none;
+  }
+  
+  /* Float the link section to the right */
+  .header-center {
+	text-align: center;
+  }
+
+  /* For the Book Now Button
+  .bookNow {
+	  float: right;
+  } */
+
+  /* for gradient background */
+
+  #grad1 {
+	height: 200px;
+	background-image: linear-gradient(to bottom right, black,  rgb(180, 17, 17) );
+	opacity: 85%;
+  }
+  
+  /* for Searching Bar */
+
+  .search-container button {
+	padding: 7.5px 12px;
+	margin-right: 12px;
+	background: #ddd;
+	font-size: 1.4em;
+	border: none;
+	color: rgb(189, 13, 13);
+	background-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+  }
+
+  .searchInput{
+	  width: 25em;
+	  height: 3em;
+	  margin-top: 10%;
+	  font-size: 1.1em;
+	  text-decoration: none;
+	  border: none;
+	  padding-left: 1.3em;
+	  border-radius: 25px;
+  }
+  
+  .searchInput:hover{
+	outline-color: red;
+  }
+
+  .search-container button:hover {
+	background: rgb(145, 7, 7);
+	color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+	.topnav .search-container {
+	  float: none;
+	}
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 800px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+}
+}
