@@ -1,3 +1,8 @@
+html, body{
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
 
 .header {
 	overflow: hidden;
@@ -15,7 +20,9 @@
 	text-decoration: none;
 	font-size: 20px;
 	line-height: 25px;
+	animation: glow 1s ease-in-out infinite alternate;
   }
+  
   
   /* Change the background color on mouse-over */
   .header a:hover {
@@ -42,48 +49,36 @@
 	opacity: 85%;
   }
   
-  /* for Searching Bar */
-
-  .search-container button {
-	padding: 7.5px 12px;
-	margin-right: 12px;
-	background: #ddd;
-	font-size: 1.4em;
-	border: none;
-	color: rgb(189, 13, 13);
-	background-color: black;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: 0.3s ease-in-out;
-  }
-
-  .searchInput{
-	  width: 25em;
-	  height: 3em;
-	  margin-top: 10%;
-	  font-size: 1.1em;
-	  text-decoration: none;
-	  border: none;
-	  padding-left: 1.3em;
-	  border-radius: 25px;
-  }
-  
-  .searchInput:hover{
-	outline-color: red;
-  }
-
-  .search-container button:hover {
-	background: rgb(145, 7, 7);
-	color: black;
-  }
-  
-  @media screen and (max-width: 600px) {
-	.topnav .search-container {
-	  float: none;
+  @media (max-width: 640px) {
+	.container {
+	  text-align: center;
 	}
+  
+	.container-nav {
+	  flex-direction: column;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	}
+  
+	nav li {
+	  margin: 0.8em 0;
+	}
+  }
+  
+  .heading{
+	text-decoration-line: overline; 
+	padding-top: 1.2em;
+	padding-bottom: .9em;
+	font-family: 'Karla', sans-serif;
+	margin-left: 110px;
+	color: rgba(15, 52, 95, 0.829);
+	text-decoration-color: rgba(15, 52, 95, 0.829);
+  }
 
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 640px) {
 	.header a {
 	  float: none;
 	  display: block;
@@ -93,4 +88,122 @@
 	  float: none;
 	}
 }
+
+@media (min-width: 768px) {
+	.navbar-nav.navbar-center {
+	  position: absolute;
+	  left: 50%;
+	  transform: translatex(-50%);
+	}
+  }
+
+  @media screen and (max-width: 480px) {
+
+	.headings{
+		margin-left: 1em;
+	}
+}
+
+#navbar{
+	background-color: rgb(0, 0, 0);
+	color: #6e040d;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	
+}
+
+.para {
+		margin-top: 7px;
+		margin-left: 5px;
+		max-width: 25em;
+}
+  
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+
+  .cont{
+	position: relative;
+	text-align: center;
+  }
+
+  .over{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  }
+
+  .bg{
+	  background-color: black;
+	  color: #6e040d;
+  }
+
+  .bg-2{
+	background-color: rgb(0, 0, 0);
+	color: #6e040d;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 1.2em;
+  }
+
+
+
+
+
+  #demo {
+	height:100%;
+	position:relative;
+	overflow:hidden;
+  }
+  
+  
+  .green{
+	background-color:#6fb936;
+  }
+		  .thumb{
+			  margin-bottom: 10px;
+		  }
+		  
+		  .page-top{
+			  margin-top:85px;
+		  }
+  
+	 
+  img.zoom {
+	  width: 100%;
+	  height: 200px;
+	  border-radius:5px;
+	  object-fit:cover;
+  }
+		  
+   
+  .transition {
+	  -webkit-transform: scale(1.2); 
+	  -moz-transform: scale(1.2);
+	  -o-transform: scale(1.2);
+	  transform: scale(1.2);
+  }
+	  .modal-header {
+	 
+	   border-bottom: none;
+  }
+	  .modal-title {
+		  color:#000;
+	  }
+	  .modal-footer{
+		display:none;  
+	  }
+
+.connect{
+	background-image: url(background.png);
+	color: black;
+}
+
+i:hover{
+	color: antiquewhite;
+	cursor: pointer;
 }
